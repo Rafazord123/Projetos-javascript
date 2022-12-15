@@ -1,0 +1,30 @@
+VIEW é o que o usúario vai ver
+
+<% Controle de fluxo (if, for...) %>
+<%= Imprime escapando caracteres %>
+<%= Imprime  sem escapar caracteres %>
+<%# Coméntarios %>
+<% include(' CAMINHO/ARQUIVO '); %>
+
+
+Exemplo: <h1>         (if e else)
+<% if(typeof titulo !=='undefined' ) { %>
+                <%=titulo %>
+                    <% }else {%>
+                       <%= umaVariavelLocal%>
+                        <% } %>
+
+              caso eu queira enviar uma mensagen qualquer 
+
+             <% if(typeof titulo !=='undefined' ) { %>
+                <%=titulo %>
+                    <% }else {%>
+                        O título não foi enviado.
+                        <% } %>
+
+               
+               (for)
+        <% for(let numero of numeros ) { %>
+            <%= numero %><br>
+            <%}; %>
+</h1> -->
